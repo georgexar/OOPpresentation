@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Αντικειμενοστρεφής Προγραμματισμός</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form class="activity-form">
+                <div class="code-container">
+                    <pre>
+public class Car {
+    private String brand ;
+    private String model ;
+    private String color ;               
+public Car(String brand, String model, String color) {
+    this.brand = brand;
+    this.model = model;
+    this.color = color;
+}                  
+public String getBrand() {
+    return brand;
+}                   
+public String getModel() {
+    return model;
+}                     
+public String getColor() {
+    return color;
+}
+}
+public class Main(){
+public static void main(String[] args) {
+    Car myCar = new Car("<input type='text' id='brand' placeholder='Μάρκα' maxlength="10" required>", "<input type='text' id='model' placeholder='Μοντέλο' maxlength="10" required>", "<input type='text' id='color' placeholder='Χρώμα' maxlength="10" required>");
+}
+}
+ </pre>
+                    <button type="button" id="createCar">Δημιουργία Αυτοκινήτου</button>
+                    <div id="carDetails" >Περιμένετε να δημιουργηθεί το αυτοκινητο...</div> 
+                </div>
+            </form>
+        </div>
+        <div class="buttons">
+            <button class="backward-button">
+                <img src="BackwardButton.png" alt="Backward Button">
+            </button>
+            <button class="forward-button">
+                <img src="ForwardButton.png" alt="Forward Button">
+            </button>
+        </div>
+    </main>
+    <script src="script2.js"></script>
+</body>
+</html>
+
+
+
